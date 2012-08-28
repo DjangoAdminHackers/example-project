@@ -1,2 +1,2 @@
 django
-
+git+git://github.com/DjangoAdminHackers/admin-skin.git
