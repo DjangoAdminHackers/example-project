@@ -121,7 +121,7 @@ INSTALLED_APPS = (
     'example_project',
     'address_book',
     
-    'admin-skin',
+    'adminskin',
     'compressor',
     
     # Uncomment the next line to enable the admin:

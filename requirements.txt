@@ -1,2 +1,2 @@
 django
--e git+git://github.com/DjangoAdminHackers/admin-skin.git#egg=admin-skin
+-e git+git://github.com/DjangoAdminHackers/admin-skin.git#egg=adminskin
