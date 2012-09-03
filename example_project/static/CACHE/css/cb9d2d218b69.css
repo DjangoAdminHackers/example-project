@@ -1,0 +1,570 @@
+/* Colours */
+/*  base text colour */
+/*  stronger text colour */
+/*  distictive brand colour */
+/*  text link colour */
+/*  text link hover colour */
+/*  text on the brand colour */
+/*  text link on the brand */
+/*  site background colour */
+/*  highlight colour for elements on the background */
+/*  fill colour for buttons and key UI elements */
+/*  text on feature colour */
+/*  link on the feature colour */
+/* Typography */
+/* Helper mixins */
+/* ========== Image replacement ========== */
+/* ========== Button with icon on left ========== */
+/* ========== Button without icon ========== */
+/* ========== Button without icon ========== */
+/* Icon overrides */
+.addlink {
+  background: url('/static/admin/img/e-icon_addlink.gif') 0 4px no-repeat; }
+
+.changelink {
+  background: url('/static/admin/img/e-icon_changelink.gif') 0 4px no-repeat; }
+
+.changelink, .addlink {
+  padding-left: 15px; }
+
+/* Overrides */
+body {
+  background: #f3f3f3;
+  color: #4c4c4c;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 15px; }
+
+h1, h2, h3, h4 {
+  color: #251909;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: normal; }
+
+h1 {
+  font-size: 32px;
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 28px;
+  text-transform: uppercase; }
+
+h3 {
+  font-size: 22px; }
+
+a {
+  color: #0079c2;
+  text-decoration: none;
+  font-weight: normal; }
+  a:link, a:active, a:active, a:visited {
+    color: #0079c2;
+    text-decoration: none; }
+  a:hover {
+    color: #005682;
+    text-decoration: underline; }
+
+#container {
+  min-width: 730px; }
+
+#header {
+  background: none;
+  color: #4c4c4c;
+  margin-bottom: 15px;
+  /* ========== Replace site name with logo ========== */ }
+  #header #branding h1 {
+    display: block;
+    border: 0;
+    text-indent: -999em;
+    overflow: hidden;
+    text-align: left;
+    direction: ltr;
+    *line-height: 0;
+    width: 184px;
+    height: 65px;
+    background: transparent url('/static/admin/img/e-logo.png') 0 0 no-repeat; }
+  #header #user-tools {
+    right: 15px;
+    font-size: 1.1em; }
+  #header a {
+    color: #0079c2;
+    text-decoration: none;
+    font-weight: normal; }
+    #header a:link, #header a:active, #header a:active, #header a:visited {
+      color: #0079c2;
+      text-decoration: none; }
+    #header a:hover {
+      color: #005682;
+      text-decoration: underline; }
+
+div.breadcrumbs {
+  display: inline-block;
+  background: none;
+  border-top: solid 1px #CCC;
+  margin: 0 0 20px 0;
+  padding: 5px; }
+
+/* ========== Error/Success messages after action ========== */
+ul.messagelist {
+  margin: 0;
+  padding: 0;
+  border-top: solid 1px #CCC;
+  border-right: solid 1px #CCC;
+  border-left: solid 1px #CCC;
+  float: right;
+  display: inline-block; }
+  ul.messagelist li {
+    border-bottom: solid 1px #CCC;
+    margin: 0;
+    padding-right: 10px; }
+
+#content {
+  margin: 0; }
+
+.change-list #content h1 {
+  display: inline-block;
+  float: left; }
+.change-list #content #content-main {
+  clear: both; }
+
+/* ========== Main action buttons ========== */
+ul.object-tools {
+  position: static;
+  display: inline-block;
+  float: left;
+  clear: left;
+  margin: 5px 0 20px 0; }
+  ul.object-tools li {
+    height: auto;
+    background: none;
+    float: left;
+    margin: 0 20px 0 0;
+    padding: 0 0 0 0; }
+    ul.object-tools li:hover {
+      background: none; }
+    ul.object-tools li a.addlink, ul.object-tools li a.historylink {
+      color: white;
+      padding: 10px 15px 10px 30px;
+      font-size: 1.2em;
+      background: #222222 url('/static/admin/img/e-icon_addlink-white.gif') 12px 12px no-repeat;
+      border: none;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px; }
+      ul.object-tools li a.addlink:link, ul.object-tools li a.addlink:active, ul.object-tools li a.addlink:active, ul.object-tools li a.addlink:visited, ul.object-tools li a.historylink:link, ul.object-tools li a.historylink:active, ul.object-tools li a.historylink:active, ul.object-tools li a.historylink:visited {
+        color: white;
+        padding: 10px 15px 10px 30px;
+        font-size: 1.2em;
+        background: #222222 url('/static/admin/img/e-icon_addlink-white.gif') 12px 12px no-repeat;
+        border: none; }
+      ul.object-tools li a.addlink:hover, ul.object-tools li a.historylink:hover {
+        color: white;
+        padding: 10px 15px 10px 30px;
+        font-size: 1.2em;
+        background: #222222 url('/static/admin/img/e-icon_addlink-white.gif') 12px 12px no-repeat;
+        border: none; }
+
+/* Dashboard only */
+.dashboard .module {
+  background: transparent;
+  border: none;
+  margin-bottom: 2em; }
+  .dashboard .module caption {
+    display: inline-block;
+    margin: 0 0 10px 0;
+    padding: 0 0 3px 0;
+    font-size: 28px;
+    border-bottom: solid 1px #000;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: normal;
+    background: none; }
+    .dashboard .module caption a {
+      color: #0079c2; }
+      .dashboard .module caption a:link, .dashboard .module caption a:active, .dashboard .module caption a:active, .dashboard .module caption a:visited {
+        color: #0079c2; }
+      .dashboard .module caption a:hover {
+        color: #005682; }
+  .dashboard .module tr {
+    background: #e4e4e4; }
+    .dashboard .module tr td, .dashboard .module tr th {
+      line-height: 1.6em;
+      vertical-align: middle;
+      border-bottom: solid 2px #F3F3F3; }
+.dashboard #content-related {
+  margin-right: -21em; }
+  .dashboard #content-related .module h2 {
+    display: inline-block;
+    margin: 0 0 10px 0;
+    padding: 0 0 3px 0;
+    font-size: 28px;
+    border-bottom: solid 1px #000;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: normal;
+    background: none;
+    color: #251909; }
+  .dashboard #content-related .module h3 {
+    font-size: 22px;
+    color: #251909; }
+  .dashboard #content-related .module ul li {
+    font-size: 1em;
+    line-height: 1.4em;
+    margin: 5px 0; }
+    .dashboard #content-related .module ul li span {
+      font-size: 0.9em; }
+
+/* Changlist only */
+/* ========== Toolbar (search) ========== */
+.change-list .filtered {
+  min-height: 0; }
+
+.change-list .filtered .results, .change-list .filtered .paginator, .filtered #toolbar, .filtered div.xfull, .filtered div.actions {
+  margin-right: 0 !important; }
+
+#changelist {
+  width: auto;
+  display: block;
+  margin-right: 200px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+  #changelist #toolbar {
+    display: inline-block;
+    position: absolute;
+    top: -39px;
+    right: 0;
+    background: none;
+    background-color: #222222;
+    padding: 6px 8px;
+    border: none;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0; }
+    #changelist #toolbar form {
+      position: relative; }
+      #changelist #toolbar form input {
+        height: 26px;
+        font-size: 12px;
+        background: #DDD;
+        margin: 0;
+        margin-left: 5px;
+        padding: 0 5px;
+        border: none;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px; }
+      #changelist #toolbar form input#search-submit {
+        color: white;
+        padding: 10px 15px;
+        font-size: 1.2em;
+        background: #222222 none;
+        border: none;
+        background-color: white;
+        padding: 1px 10px 0 10px;
+        color: #0079c2;
+        height: 30px; }
+      #changelist #toolbar form input#search-submit:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        color: #005682; }
+      #changelist #toolbar form span {
+        position: absolute;
+        left: 0;
+        top: -30px;
+        font-size: 1em; }
+    #changelist #toolbar a#toggle {
+      line-height: 30px;
+      padding: 2px 15px 0 15px;
+      position: absolute;
+      top: -50px;
+      right: 0;
+      background-color: white;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      -moz-box-shadow: 0 0 5px #aaaaaa;
+      -webkit-box-shadow: 0 0 5px #aaaaaa;
+      box-shadow: 0 0 5px #aaaaaa;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px; }
+    #changelist #toolbar a#toggle.show {
+      padding-left: 30px;
+      background-image: url('/static/admin/img/e-left_arrow.gif');
+      background-position: 8% center; }
+    #changelist #toolbar a#toggle.hide {
+      padding-right: 30px;
+      background-image: url('/static/admin/img/e-right_arrow.gif');
+      background-position: 92% center; }
+  #changelist #changelist-filter {
+    background: none;
+    border: none;
+    right: -180px; }
+    #changelist #changelist-filter h2 {
+      display: inline-block;
+      margin: 0 0 10px 0;
+      padding: 0 0 3px 0;
+      font-size: 28px;
+      border-bottom: solid 1px #000;
+      font-family: "Open Sans Condensed", sans-serif;
+      font-weight: normal;
+      background: none;
+      color: #251909; }
+    #changelist #changelist-filter h3 {
+      font-size: 20px;
+      margin-bottom: 0.3em;
+      color: #251909; }
+    #changelist #changelist-filter li a {
+      font-size: 1.2em;
+      line-height: 1.4em;
+      color: #0079c2;
+      text-decoration: none;
+      font-weight: normal; }
+      #changelist #changelist-filter li a:link, #changelist #changelist-filter li a:active, #changelist #changelist-filter li a:active, #changelist #changelist-filter li a:visited {
+        color: #0079c2;
+        text-decoration: none; }
+      #changelist #changelist-filter li a:hover {
+        color: #005682;
+        text-decoration: underline; }
+    #changelist #changelist-filter li.selected {
+      border-left: solid 5px #222; }
+      #changelist #changelist-filter li.selected a {
+        font-size: 1.2em;
+        line-height: 1.4em;
+        color: #251909 !important;
+        text-decoration: none;
+        font-weight: normal; }
+        #changelist #changelist-filter li.selected a:link, #changelist #changelist-filter li.selected a:active, #changelist #changelist-filter li.selected a:active, #changelist #changelist-filter li.selected a:visited {
+          color: #251909 !important;
+          text-decoration: none; }
+        #changelist #changelist-filter li.selected a:hover {
+          text-decoration: underline; }
+  #changelist .xfull {
+    border: none;
+    border-top: solid 3px #251909;
+    background: white; }
+    #changelist .xfull .toplinks {
+      background: white;
+      border-bottom: none; }
+      #changelist .xfull .toplinks li a {
+        font-size: 1.2em;
+        line-height: 26px; }
+  #changelist .actions {
+    background: white;
+    border-right: none;
+    border-bottom: none;
+    padding: 5px 5px 10px 5px; }
+    #changelist .actions label, #changelist .actions span.action-counter {
+      font-size: 1em; }
+    #changelist .actions select {
+      margin: 0;
+      width: 200px; }
+    #changelist .actions button.button {
+      background: #251909;
+      border: none;
+      color: white;
+      padding: 3px 5px 4px 5px; }
+    #changelist .actions button.button:hover {
+      text-decoration: underline;
+      cursor: pointer; }
+  #changelist .results #result_list {
+    border: none; }
+    #changelist .results #result_list thead th, #changelist .results #result_list tfoot td {
+      background: #007bbc;
+      color: white;
+      font-weight: normal;
+      text-transform: uppercase;
+      font-family: "Open Sans Condensed", sans-serif;
+      font-size: 1.4em;
+      padding: 5px;
+      text-align: center; }
+      #changelist .results #result_list thead th .sortoptions, #changelist .results #result_list tfoot td .sortoptions {
+        padding: 0 5px;
+        height: 27px; }
+        #changelist .results #result_list thead th .sortoptions span, #changelist .results #result_list tfoot td .sortoptions span {
+          line-height: 27px; }
+        #changelist .results #result_list thead th .sortoptions a, #changelist .results #result_list tfoot td .sortoptions a {
+          width: 14px;
+          height: 14px;
+          margin-top: 6px; }
+        #changelist .results #result_list thead th .sortoptions a.sortremove, #changelist .results #result_list tfoot td .sortoptions a.sortremove {
+          background: transparent url('/static/admin/img/e-sorting-icons.gif') -4px -6px no-repeat; }
+        #changelist .results #result_list thead th .sortoptions a.sortremove:hover, #changelist .results #result_list tfoot td .sortoptions a.sortremove:hover {
+          background: transparent url('/static/admin/img/e-sorting-icons.gif') -4px -28px no-repeat; }
+        #changelist .results #result_list thead th .sortoptions a.ascending, #changelist .results #result_list tfoot td .sortoptions a.ascending {
+          background: transparent url('/static/admin/img/e-sorting-icons.gif') -5px -50px no-repeat; }
+        #changelist .results #result_list thead th .sortoptions a.ascending:hover, #changelist .results #result_list tfoot td .sortoptions a.ascending:hover {
+          background: transparent url('/static/admin/img/e-sorting-icons.gif') -5px -72px no-repeat; }
+        #changelist .results #result_list thead th .sortoptions a.decending, #changelist .results #result_list tfoot td .sortoptions a.decending {
+          background: transparent url('/static/admin/img/e-sorting-icons.gif') -5px -94px no-repeat; }
+        #changelist .results #result_list thead th .sortoptions a.decending:hover, #changelist .results #result_list tfoot td .sortoptions a.decending:hover {
+          background: transparent url('/static/admin/img/e-sorting-icons.gif') -5px -115px no-repeat; }
+      #changelist .results #result_list thead th a, #changelist .results #result_list tfoot td a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase; }
+        #changelist .results #result_list thead th a:link, #changelist .results #result_list thead th a:active, #changelist .results #result_list thead th a:active, #changelist .results #result_list thead th a:visited, #changelist .results #result_list tfoot td a:link, #changelist .results #result_list tfoot td a:active, #changelist .results #result_list tfoot td a:active, #changelist .results #result_list tfoot td a:visited {
+          color: white; }
+        #changelist .results #result_list thead th a:hover, #changelist .results #result_list tfoot td a:hover {
+          text-decoration: underline; }
+    #changelist .results #result_list tbody tr {
+      background: white; }
+      #changelist .results #result_list tbody tr td, #changelist .results #result_list tbody tr th {
+        vertical-align: middle; }
+  #changelist .paginator {
+    background: white;
+    border: none;
+    font-size: 1em; }
+    #changelist .paginator input {
+      color: white;
+      padding: 10px 15px;
+      font-size: 1.2em;
+      background: #222222 none;
+      border: none;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px; }
+    #changelist .paginator input:hover {
+      text-decoration: underline;
+      cursor: pointer; }
+    #changelist .paginator a:hover {
+      background: white;
+      border-color: #251909;
+      color: #005682; }
+
+#changelist.module {
+  border: none; }
+
+#changelist.hidden {
+  margin-right: 0; }
+  #changelist.hidden #changelist-filter {
+    display: none; }
+
+.submit-row {
+  padding: 10px;
+  background: white; }
+  .submit-row input {
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    background: #222222 none;
+    border: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #AAA; }
+  .submit-row input:hover {
+    text-decoration: underline;
+    cursor: pointer; }
+  .submit-row input.default {
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    background: #222222 none;
+    border: none; }
+  .submit-row p.deletelink-box {
+    position: absolute;
+    left: 0;
+    bottom: -10px; }
+
+/* Change form */
+.change-form h1 {
+  display: inline-block;
+  float: left;
+  margin-bottom: 0.5em; }
+.change-form .cancel-header {
+  float: right;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  background: #222222 none;
+  border: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px; }
+.change-form .cancel-footer {
+  display: inline-block;
+  float: left;
+  font-size: 1.2em;
+  line-height: 37px; }
+.change-form fieldset, .change-form .inline-group {
+  background: white;
+  border: none;
+  -moz-box-shadow: 0 0 5px #aaaaaa;
+  -webkit-box-shadow: 0 0 5px #aaaaaa;
+  box-shadow: 0 0 5px #aaaaaa;
+  margin-bottom: 30px; }
+  .change-form fieldset h2, .change-form .inline-group h2 {
+    background: white;
+    font-size: 28px;
+    color: #007bbc;
+    font-weight: normal;
+    margin: 12px;
+    padding: 0;
+    display: inline-block;
+    border-bottom: solid 1px #000;
+    text-transform: capitalize; }
+  .change-form fieldset table thead th, .change-form fieldset table tfoot td, .change-form .inline-group table thead th, .change-form .inline-group table tfoot td {
+    background: #007bbc;
+    color: white;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1.4em;
+    padding: 5px;
+    text-align: center; }
+  .change-form fieldset table tbody tr, .change-form .inline-group table tbody tr {
+    background: white; }
+    .change-form fieldset table tbody tr td, .change-form fieldset table tbody tr th, .change-form .inline-group table tbody tr td, .change-form .inline-group table tbody tr th {
+      vertical-align: middle; }
+    .change-form fieldset table tbody tr td.original, .change-form .inline-group table tbody tr td.original {
+      position: relative; }
+      .change-form fieldset table tbody tr td.original p, .change-form .inline-group table tbody tr td.original p {
+        top: 2px; }
+  .change-form fieldset table tbody tr.add-row td, .change-form .inline-group table tbody tr.add-row td {
+    background: #FFF;
+    padding: 12px; }
+  .change-form fieldset h3, .change-form .inline-group h3 {
+    background: #007bbc;
+    font-size: 16px;
+    border: none;
+    color: white;
+    font-weight: normal;
+    margin: 12px;
+    padding: 5px 80px 5px 10px;
+    display: inline-block;
+    text-transform: capitalize;
+    position: relative; }
+    .change-form fieldset h3 a.inline-deletelink, .change-form .inline-group h3 a.inline-deletelink {
+      position: absolute;
+      right: 10px;
+      top: 9px; }
+    .change-form fieldset h3 span.delete, .change-form .inline-group h3 span.delete {
+      position: absolute;
+      right: 10px;
+      top: 5px; }
+      .change-form fieldset h3 span.delete label, .change-form .inline-group h3 span.delete label {
+        color: white;
+        font-size: 0.8em; }
+.change-form .inline-related fieldset {
+  margin-bottom: 0;
+  -moz-box-shadow: 0 0 0 #FFF;
+  -webkit-box-shadow: 0 0 0 #FFF;
+  box-shadow: 0 0 0 #FFF; }
+.change-form div.add-row {
+  background: #FFF;
+  padding: 12px; }
+
+/* Widgets */
+.calendarbox a.calendarnav-previous, .calendarbox a.calendarnav-next {
+  background: none; }
+
+.calendarbox {
+  border: solid 1px #007bbc; }
+  .calendarbox p.calendar-cancel {
+    background: white; }
+
+div.calendar table caption {
+  background: #007bbc; }
+div.calendar table th {
+  background: #FFF;
+  color: #888; }
+div.calendar table tr td a:hover {
+  color: white;
+  background: #007bbc; }

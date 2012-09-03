@@ -8,6 +8,7 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'example_project.views.home', name='home'),
     # url(r'^address_book/', include('address_book.urls')),
+    url(r'^features/', include('adminskin.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
