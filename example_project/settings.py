@@ -98,7 +98,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.csrf",
     "django.contrib.messages.context_processors.messages",
     "django.core.context_processors.request",
-    "adminskin.context_processors.features",
+    "adminfeatures.context_processors.features",
 )
 
 MIDDLEWARE_CLASSES = (
@@ -132,7 +132,8 @@ INSTALLED_APPS = (
     
     'example_project',
     'address_book',
-    
+
+    'adminfeatures',
     'adminskin',
     'compressor',
     
