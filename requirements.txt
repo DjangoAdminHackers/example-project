@@ -1,3 +1,3 @@
 django>=1.3
-git+git://github.com/DjangoAdminHackers/django-adminskin.git#egg=adminskin
-git+git://github.com/DjangoAdminHackers/django-adminfeatures.git#egg=adminfeatures
+git+git://github.com/DjangoAdminHackers/django-adminskin.git#egg=django-adminskin
+git+git://github.com/DjangoAdminHackers/django-adminfeatures.git#egg=django-adminfeatures
